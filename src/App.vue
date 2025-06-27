@@ -1,4 +1,5 @@
 <script setup>
+import LoginPage from './pages/LoginPage.vue';
 import { useCounterStore } from  './stores/counter.store'
 
 const counter = useCounterStore()
@@ -6,8 +7,7 @@ const counter = useCounterStore()
 
 <template>
   <div class="contador">
-    <h1>Contador: {{ counter.count }}</h1>
-    <button @click="counter.increment">Incrementar</button>
+   <LoginPage />
   </div>
 </template>
 
